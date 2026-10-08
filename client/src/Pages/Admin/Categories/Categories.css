@@ -1,0 +1,376 @@
+.admin-categories-container {
+    display: flex;
+    min-height: 100vh;
+    width: 1270px;
+    background-color: #f5f7f8;
+}
+
+.categories-page {
+    flex: 1;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.categories-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.categories-actions button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.export-btn,
+.import-btn {
+    margin-right: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.add-category-btn {
+    background-color: #eaf8ec !important;
+    color: #229b4b;
+}
+
+.categories-table-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+.categories-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.categories-table-container th {
+    background-color: #e7ebee;
+    padding: 12px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.categories-table-container td {
+    padding: 15px 12px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.edit-btn,
+.status-btn {
+    padding: 7px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+.edit-btn {
+    border: 1px solid #dce5f5;
+    background-color: #f1f5ff;
+    color: #1756a5;
+}
+
+.status-btn {
+    border: 1px solid #ccebd5;
+    background-color: #eefaf1;
+    color: #248344;
+}
+
+/* =========================
+   ADD CATEGORY OVERLAY
+========================= */
+
+.add-category-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1000;
+}
+
+/* =========================
+   ADD CATEGORY DRAWER
+========================= */
+
+.add-category-drawer {
+    width: 400px;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.15);
+    overflow-y: auto;
+}
+
+/* =========================
+   DRAWER HEADER
+========================= */
+
+.add-category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.add-category-header h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.close-category-btn {
+    border: none;
+    background: transparent;
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
+    color: #333;
+    padding: 0;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.add-category-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-category-form label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.add-category-form input,
+.add-category-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 18px;
+    outline: none;
+    font-family: inherit;
+}
+
+.add-category-form input {
+    height: 40px;
+}
+
+.add-category-form textarea {
+    height: 90px;
+    resize: vertical;
+}
+
+.add-category-form input:focus,
+.add-category-form textarea:focus {
+    border-color: #07566b;
+}
+
+/* =========================
+   FORM BUTTONS
+========================= */
+
+.add-category-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.cancel-category-btn,
+.submit-category-btn {
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cancel-category-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.submit-category-btn {
+    background-color: #2fbe5b;
+    color: white;
+}
+
+.cancel-category-btn:hover {
+    background-color: #d63d2f;
+}
+
+.submit-category-btn:hover {
+    background-color: #27a84d;
+}
+
+/* =========================
+   SHOW CATEGORY OVERLAY
+========================= */
+
+.show-category-overlay {
+    position: fixed;
+    inset: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* =========================
+   SHOW CATEGORY MODAL
+========================= */
+
+.show-category-modal {
+    width: 500px;
+    max-width: 90%;
+    max-height: 85vh;
+    padding: 25px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+}
+
+/* =========================
+   SHOW CATEGORY HEADER
+========================= */
+
+.show-category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.show-category-header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.close-show-category-btn {
+    border: none;
+    background: transparent;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    color: #555;
+    padding: 0;
+}
+
+/* =========================
+   SHOW CATEGORY CONTENT
+========================= */
+
+.show-category-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.show-category-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.show-category-field label {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* =========================
+   CATEGORY NAME
+========================= */
+
+.category-name-box {
+    margin: 0;
+    padding: 14px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    font-size: 17px;
+    box-sizing: border-box;
+    word-break: break-word;
+}
+
+/* =========================
+   CATEGORY DESCRIPTION
+========================= */
+
+.category-description-box {
+    width: 100%;
+    height: 250px;
+    padding: 14px;
+    box-sizing: border-box;
+    background: #f5f5f5;
+    border-radius: 8px;
+    font-size: 17px;
+    line-height: 1.5;
+    overflow-y: auto;
+    overflow-x: hidden;
+    white-space: normal;
+    word-break: break-word;
+}
+
+/* =========================
+   CATEGORY STATUS
+========================= */
+
+.category-status-box {
+    margin: 0;
+    padding: 12px 14px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    font-size: 17px;
+    box-sizing: border-box;
+}
+
+/* =========================
+   DESCRIPTION SCROLLBAR
+========================= */
+
+.category-description-box::-webkit-scrollbar,
+.show-category-modal::-webkit-scrollbar {
+    width: 8px;
+}
+
+.category-description-box::-webkit-scrollbar-track,
+.show-category-modal::-webkit-scrollbar-track {
+    background: #eeeeee;
+    border-radius: 10px;
+}
+
+.category-description-box::-webkit-scrollbar-thumb,
+.show-category-modal::-webkit-scrollbar-thumb {
+    background: #999999;
+    border-radius: 10px;
+}
+
+.category-description-box::-webkit-scrollbar-thumb:hover,
+.show-category-modal::-webkit-scrollbar-thumb:hover {
+    background: #777777;
+}

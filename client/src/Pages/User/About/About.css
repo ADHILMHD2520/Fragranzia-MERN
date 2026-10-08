@@ -1,0 +1,37 @@
+
+
+.left-about {
+    width: 1010px;
+    height: 600px;
+    gap: 40px;
+}
+
+.full-about {
+    display: flex;
+    width: 1400px;
+    height: auto;
+    left: 80px;
+    top: 190px;
+    padding: 10px;
+
+    margin-left: 60px; /* add this */
+}
+
+.para-text {
+    width: 1010px;
+    height: 400px;
+    font-family: 'Inter', 'Poppins', 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(0, 0, 0, 1);
+    line-height: 1.5;
+
+
+}
+
+.about-img img{
+    height: 600px;
+}

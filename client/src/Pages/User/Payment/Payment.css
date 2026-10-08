@@ -1,0 +1,95 @@
+.checkout-background {
+    filter: blur(5px);
+}
+
+.payment-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.payment-box {
+    width: 360px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 30px;
+    text-align: center;
+}
+
+.success-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #48c96b;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto 25px;
+
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.payment-box h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.payment-box p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.payment-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.payment-buttons button {
+    width: 135px;
+    height: 40px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.home-btn {
+    background: white;
+    border: 2px solid #00465c;
+}
+
+.track-btn {
+    background: #00465c;
+    color: white;
+    border: 2px solid #00465c;
+}
+
+
+.failure-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+    background: #ff2028;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto 25px;
+
+    font-size: 80px;
+    font-weight: bold;
+}

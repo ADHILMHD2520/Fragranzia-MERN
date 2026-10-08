@@ -1,0 +1,402 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.main {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 80px;
+
+    padding: 50px;
+
+    background: #ffffff;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* =========================
+   LEFT BANNER
+========================= */
+
+.banner {
+    width: 500px;
+    height: 500px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url('../../../assets/Perfume.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 20px;
+}
+
+
+.banner h1 {
+    margin: 0 0 12px 0;
+
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+.banner p {
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.right {
+    width: 400px;
+}
+
+
+/* =========================
+   SOCIAL BUTTONS
+========================= */
+
+.social {
+    display: flex;
+
+    gap: 20px;
+}
+
+
+.social button {
+    flex: 1;
+
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    border: 1px solid #0d3b4c;
+
+    background: white;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+.google-icon {
+    font-size: 17px;
+}
+
+
+.facebook-icon {
+    font-size: 17px;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.signup-text {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 20px 0;
+
+    font-size: 12px;
+
+    color: #555;
+}
+
+
+.signup-text hr {
+    flex: 1;
+
+    margin: 0;
+
+    border: none;
+
+    border-top: 1px solid #bcbcbc;
+}
+
+
+.signup-text span {
+    white-space: nowrap;
+}
+
+
+/* =========================
+   INPUT BOX
+========================= */
+
+.input-box {
+    width: 100%;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    background: #e6e6e6;
+
+    padding: 0 14px;
+
+    margin-bottom: 14px;
+
+    border-radius: 7px;
+}
+
+
+.input-icon {
+    flex-shrink: 0;
+
+    font-size: 14px;
+
+    color: #555;
+}
+
+
+.input-box input {
+    flex: 1;
+
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    color: #333;
+}
+
+
+.input-box input::placeholder {
+    color: #777;
+}
+
+
+/* =========================
+   EYE BUTTON
+========================= */
+
+.eye-button {
+    border: none;
+
+    background: transparent;
+
+    padding: 3px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #777;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   TERMS
+========================= */
+
+.terms {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    margin: 10px 0 18px;
+
+    font-size: 12px;
+}
+
+
+.terms input {
+    margin: 0;
+
+    cursor: pointer;
+}
+
+
+.terms label {
+    cursor: pointer;
+}
+
+
+.terms a {
+    color: #0d3b4c;
+
+    text-decoration: underline;
+}
+
+
+/* =========================
+   SIGN UP BUTTON
+========================= */
+
+.btn {
+    width: 100%;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #0d3b4c;
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    background: #092f3d;
+}
+
+
+/* =========================
+   SIGN IN
+========================= */
+
+.signin {
+    text-align: center;
+
+    margin-top: 15px;
+
+    font-size: 13px;
+}
+
+
+.signin a {
+    color: #0d3b4c;
+
+    text-decoration: underline;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .main {
+        gap: 40px;
+
+        padding: 30px;
+    }
+
+    .banner {
+        width: 430px;
+        height: 430px;
+    }
+
+    .right {
+        width: 350px;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .main {
+        flex-direction: column;
+
+        height: auto;
+
+        padding: 30px 20px;
+    }
+
+    .banner {
+        width: 100%;
+        max-width: 500px;
+
+        height: 400px;
+    }
+
+    .right {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .main {
+        padding: 20px;
+    }
+
+    .banner {
+        height: 350px;
+
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+
+    .banner h1 {
+        font-size: 27px;
+    }
+
+    .social {
+        gap: 10px;
+    }
+}

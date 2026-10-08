@@ -1,0 +1,302 @@
+/* ========================================
+   ALL PRODUCTS PAGE
+======================================== */
+
+.all-products-container {
+    width: 100%;
+}
+
+
+/* ========================================
+   BLUE SHIPPING HEADER
+======================================== */
+
+.all-products-blue-header {
+    width: 100%;
+
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #00475b;
+
+    color: white;
+}
+
+
+.all-products-blue-header p {
+    margin: 0;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* ========================================
+   MAIN PAGE
+======================================== */
+
+.all-products-page {
+    width: 90%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 30px 0 70px;
+}
+
+
+/* ========================================
+   BREADCRUMB
+======================================== */
+
+.all-products-breadcrumb {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    margin-bottom: 20px;
+
+    font-size: 12px;
+
+    color: #555;
+}
+
+
+.all-products-breadcrumb a {
+    color: #555;
+
+    text-decoration: none;
+}
+
+
+.all-products-breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+
+.all-products-breadcrumb span {
+    color: #777;
+}
+
+
+/* ========================================
+   PAGE HEADER
+======================================== */
+
+.all-products-header {
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+
+.all-products-title h1 {
+    margin: 0 0 5px;
+
+    font-size: 28px;
+
+    font-weight: 600;
+
+    color: #111;
+}
+
+
+.all-products-title p {
+    margin: 0;
+
+    font-size: 12px;
+
+    color: #777;
+}
+
+
+/* ========================================
+   SORT SECTION
+======================================== */
+
+.all-products-sort {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+.all-products-sort > span {
+    margin-right: 2px;
+
+    font-size: 12px;
+
+    color: #555;
+}
+
+
+/* ========================================
+   SORT OPTIONS
+======================================== */
+
+.all-products-sort button {
+    height: auto;
+
+    padding: 0;
+
+    background: transparent;
+
+    border: none;
+
+    border-radius: 0;
+
+    color: #555;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    transition: color 0.2s ease;
+}
+
+
+.all-products-sort button:hover {
+    color: #00475b;
+}
+
+
+/* Selected sort option */
+
+.all-products-sort button:first-of-type {
+    color: #111;
+
+    font-weight: 600;
+}
+
+
+/* ========================================
+   FILTER BUTTON
+======================================== */
+
+.all-products-sort .filter-button {
+    height: 34px;
+
+    margin-left: 8px;
+
+    padding: 0 17px;
+
+    background-color: white;
+
+    border: 1px solid #00475b;
+
+    border-radius: 4px;
+
+    color: #00475b;
+
+    font-size: 11px;
+
+    font-weight: 400;
+}
+
+
+.all-products-sort .filter-button:hover {
+    background-color: #00475b;
+
+    color: white;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 1000px) {
+
+    .all-products-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .all-products-sort {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .all-products-page {
+        width: 92%;
+
+        padding-top: 20px;
+    }
+
+
+    .all-products-title h1 {
+        font-size: 23px;
+    }
+
+
+    .all-products-sort {
+        width: 100%;
+
+        gap: 6px;
+    }
+
+
+    .all-products-sort > span {
+        width: 100%;
+
+        margin-bottom: 3px;
+    }
+
+
+    .all-products-sort button {
+        font-size: 10px;
+
+        padding: 0 9px;
+    }
+
+
+    .all-products-blue-header {
+        height: 30px;
+    }
+
+
+    .all-products-blue-header p {
+        font-size: 9px;
+    }
+
+}
+
+
+/* ========================================
+   PRODUCT GRID
+======================================== */
+
+.all-products-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px 20px;
+
+    margin-top: 35px;
+}

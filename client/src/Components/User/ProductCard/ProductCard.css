@@ -1,0 +1,189 @@
+.product-card {
+    width: 100%;
+    max-width: 270px;
+    flex-shrink: 0;
+
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* IMAGE BOX */
+
+.product-card .product-image-box {
+    width: 100%;
+    height: 250px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e1e1e1;
+    border-radius: 40px 0 40px 0;
+
+    overflow: hidden;
+
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12);
+}
+
+
+/* PRODUCT IMAGE */
+
+.product-card .product-image {
+    width: 76%;
+    height: 76%;
+    object-fit: contain;
+}
+
+
+/* NEW BADGE */
+
+.new-badge {
+    position: absolute;
+
+    top: 14px;
+    left: 14px;
+
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #00475b;
+    color: #ffffff;
+
+    font-size: 9px;
+    font-weight: 500;
+
+    border-radius:
+        45% 55% 50% 50% /
+        55% 45% 55% 45%;
+
+    transform: rotate(-12deg);
+
+    z-index: 2;
+}
+
+
+/* PRODUCT INFORMATION */
+
+.product-info {
+    padding-top: 10px;
+}
+
+
+.product-info h3 {
+    margin: 0 0 6px;
+
+    min-height: 34px;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    color: #111111;
+}
+
+
+/* PRICE */
+
+.product-price {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 9px;
+}
+
+
+.current-price {
+    font-size: 13px;
+    font-weight: 700;
+
+    color: #111111;
+}
+
+
+.old-price {
+    font-size: 9px;
+
+    color: #777777;
+
+    text-decoration: line-through;
+}
+
+
+/* ADD TO CART */
+
+.add-cart-btn {
+    width: 100%;
+    height: 34px;
+
+    border: none;
+    border-radius: 3px;
+
+    background-color: #00475b;
+    color: #ffffff;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+
+.add-cart-btn:hover {
+    background-color: #003747;
+}
+
+
+/* WISHLIST */
+
+.product-image-box {
+    position: relative;
+}
+
+.wishlist-btn {
+    position: absolute;
+
+    top: 7px;
+    right: 7px;
+
+    width: 32px;
+    height: 32px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    z-index: 5;
+}
+
+
+.wishlist-btn svg {
+    font-size: 20px;
+}
+
+
+.wishlist-btn.wishlisted svg {
+    color: red;
+}

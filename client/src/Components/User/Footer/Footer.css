@@ -1,0 +1,259 @@
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    width: 100%;
+
+    margin-top: 70px;
+
+    background-color: #00475b;
+
+    color: #ffffff;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* MAIN CONTENT */
+
+.footer-container {
+    width: 90%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 60px;
+
+    padding: 55px 0 45px;
+}
+
+
+/* =========================
+   BRAND
+========================= */
+
+.footer-brand {
+    width: 30%;
+}
+
+
+.footer-brand h2 {
+    margin: 0 0 15px;
+
+    font-size: 28px;
+    font-weight: 600;
+}
+
+
+.footer-brand p {
+    max-width: 300px;
+
+    margin: 0 0 22px;
+
+    font-size: 11px;
+    line-height: 1.7;
+
+    color: #e5e5e5;
+}
+
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.footer-socials {
+    display: flex;
+
+    gap: 12px;
+}
+
+
+.footer-socials a {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+
+.footer-socials a:hover {
+    background-color: #ffffff;
+
+    color: #00475b;
+}
+
+
+/* =========================
+   COLUMNS
+========================= */
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 10px;
+}
+
+
+.footer-column h3 {
+    margin: 0 0 10px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.footer-column a {
+    color: #e5e5e5;
+
+    font-size: 11px;
+
+    text-decoration: none;
+}
+
+
+.footer-column a:hover {
+    color: #ffffff;
+
+    text-decoration: underline;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.footer-contact {
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 11px;
+
+    color: #e5e5e5;
+}
+
+
+.footer-contact svg {
+    font-size: 17px;
+}
+
+
+/* =========================
+   FOOTER BOTTOM
+========================= */
+
+.footer-bottom {
+    width: 100%;
+
+    padding: 16px 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 1px solid #174c59;
+
+    box-sizing: border-box;
+}
+
+
+/* LEFT LINKS */
+
+.footer-bottom-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-bottom-links a {
+    color: #111;
+    text-decoration: none;
+
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.footer-bottom-links span {
+    font-size: 10px;
+    color: #111;
+}
+
+.footer-bottom-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* COPYRIGHT */
+
+.footer-copyright {
+    margin: 0;
+
+    color: #111;
+
+    font-size: 10px;
+    font-weight: 400;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .footer-container {
+        flex-wrap: wrap;
+
+        gap: 40px;
+    }
+
+
+    .footer-brand {
+        width: 100%;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    .footer-container {
+        flex-direction: column;
+
+        padding: 40px 0;
+    }
+
+
+    .footer-brand {
+        width: 100%;
+    }
+
+
+    .footer-column {
+        width: 100%;
+    }
+}
