@@ -7,7 +7,7 @@ import { FaHeart, FaShoppingCart } from "react-icons/fa";
 import Navbar from "../../../Components/User/Navbar/Navbar";
 import Footer from "../../../Components/User/Footer/Footer";
 
-import "./Wishlist.css";
+import "./WishList.css";
 
 const Wishlist = () => {
     const navigate = useNavigate();
