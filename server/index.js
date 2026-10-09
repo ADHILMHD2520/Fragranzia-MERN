@@ -12,7 +12,7 @@ const cartRoutes = require("./routes/CartRoutes");
 const wishlistRoutes = require("./routes/WishlistRoutes");
 const addressRoutes = require("./routes/AddressRoutes");
 const orderRoutes = require("./routes/OrderRoutes");
-const categoryRoutes = require("./routes/categoryRoutes");
+const categoryRoutes = require("./routes/CategoryRoutes");
 
 
 
