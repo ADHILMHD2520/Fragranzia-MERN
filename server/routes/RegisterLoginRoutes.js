@@ -10,10 +10,10 @@ const {
 } = require("../controllers/RegisterLoginController");
 
 const authMiddleware =
-    require("../middleware/AuthMiddleware");
+    require("../Middleware/AuthMiddleware");
 
 const adminMiddleware =
-    require("../middleware/AdminMiddleware");
+    require("../Middleware/AdminMiddleware");
 
 
 const router = express.Router();

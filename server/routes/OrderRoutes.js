@@ -14,8 +14,8 @@ const {
     updateReturnStatus,
 } = require("../controllers/OrderController");
 
-const authMiddleware = require("../middleware/AuthMiddleware");
-const adminMiddleware = require("../middleware/AdminMiddleware");
+const authMiddleware = require("../Middleware/AuthMiddleware");
+const adminMiddleware = require("../Middleware/AdminMiddleware");
 
 const router = express.Router();
 
