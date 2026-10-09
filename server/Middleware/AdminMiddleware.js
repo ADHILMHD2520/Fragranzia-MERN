@@ -1,6 +1,6 @@
 const adminMiddleware = (req, res, next) => {
 
-    // AuthMiddleware must run before this middleware
+    // AuthMiddleware must run before this Middleware
     if (!req.user) {
         return res.status(401).json({
             message: "Authentication required"

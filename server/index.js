@@ -47,7 +47,7 @@ app.use(cors({
   credentials: true,
 }));
 
-// use is a middleware
+// use is a Middleware
 app.use(express.json());
 
 // Serve uploaded images
