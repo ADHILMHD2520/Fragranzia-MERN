@@ -56,7 +56,7 @@ const ProductDetails = () => {
             setLoading(true);
 
             const response = await axios.get(
-                `http://localhost:5000/api/products/${id}`
+                `${import.meta.env.VITE_BACKEND_URL}/products/${id}`
             );
 
             console.log(
@@ -97,7 +97,7 @@ const ProductDetails = () => {
         try {
 
             const response = await axios.get(
-                "http://localhost:5000/api/products"
+                `${import.meta.env.VITE_BACKEND_URL}/products`
             );
 
             setProducts(
@@ -166,7 +166,7 @@ const ProductDetails = () => {
             }
 
             await axios.post(
-                "http://localhost:5000/api/cart/add",
+                `${import.meta.env.VITE_BACKEND_URL}/cart/add`,
                 {
                     productId: product._id,
                     quantity,

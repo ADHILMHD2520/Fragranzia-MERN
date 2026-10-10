@@ -32,7 +32,7 @@ const Payment = () => {
             try {
 
                 const response = await axios.delete(
-                    "http://localhost:5000/api/cart/clear",
+                    `${import.meta.env.VITE_BACKEND_URL}/cart/clear`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`,

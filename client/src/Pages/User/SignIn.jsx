@@ -40,7 +40,7 @@ const SignIn = () => {
         event.preventDefault();
         try {
             const response = await axios.post(
-                "http://localhost:5000/api/login",       //sending formData to server and wait for response
+                `${import.meta.env.VITE_BACKEND_URL}/login`,       //sending formData to server and wait for response
                 formData
             );
 

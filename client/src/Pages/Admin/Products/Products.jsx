@@ -13,7 +13,7 @@ const Products = () => {
         try {
             console.log("fetching products ====",);
             const response = await axios.get(
-                "http://localhost:5000/api/products"
+                `${import.meta.env.VITE_BACKEND_URL}/products`
             );
 
             console.log("fetch products ====", response.data);
@@ -38,7 +38,7 @@ const Products = () => {
 
         try {
             await axios.delete(
-                `http://localhost:5000/api/products/${id}`
+                `${import.meta.env.VITE_BACKEND_URL}/products/${id}`
             );
 
             setProducts((prevProducts) =>
@@ -59,7 +59,7 @@ const Products = () => {
     const handleToggleStatus = async (id) => {
         try {
             const response = await axios.put(
-                `http://localhost:5000/api/products/${id}/status`
+                `${import.meta.env.VITE_BACKEND_URL}/products/${id}/status`
             );
 
             setProducts((prevProducts) =>

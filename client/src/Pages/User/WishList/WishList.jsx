@@ -31,7 +31,7 @@ const Wishlist = () => {
             }
 
             const response = await axios.get(
-                "http://localhost:5000/api/wishlist/",
+                `${import.meta.env.VITE_BACKEND_URL}/wishlist/`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -89,7 +89,7 @@ const Wishlist = () => {
             setAddingToCart(productId);
 
             const response = await axios.post(
-                "http://localhost:5000/api/cart/add",
+                `${import.meta.env.VITE_BACKEND_URL}/cart/add`,
                 {
                     productId: productId,
                 },
@@ -130,7 +130,7 @@ const Wishlist = () => {
             const token = localStorage.getItem("accessToken");
 
             const response = await axios.delete(
-                "http://localhost:5000/api/wishlist/remove",
+                `${import.meta.env.VITE_BACKEND_URL}/wishlist/remove`,
                 {
                     data: {
                         productId: productId,

@@ -22,7 +22,7 @@ const Customers = () => {
       const token = localStorage.getItem("accessToken");
 
       const response = await axios.get(
-        "http://localhost:5000/api/admin/customers",
+        `${import.meta.env.VITE_BACKEND_URL}/admin/customers`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -63,7 +63,7 @@ const Customers = () => {
       const token = localStorage.getItem("accessToken");
 
       const response = await axios.put(
-        `http://localhost:5000/api/admin/customers/${customer._id}/status`,
+        `${import.meta.env.VITE_BACKEND_URL}/admin/customers/${customer._id}/status`,
         {},
         {
           headers: {

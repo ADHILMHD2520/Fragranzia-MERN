@@ -29,7 +29,7 @@ const AllProducts = () => {
         try {
 
             const response = await axios.get(
-                "http://localhost:5000/api/products"
+                `${import.meta.env.VITE_BACKEND_URL}/products`
             );
 
             console.log("Products:", response.data);

@@ -43,7 +43,7 @@ const SignUp = () => {
         event.preventDefault();
         try {
             const response = await axios.post(
-                "http://localhost:5000/api/register",
+                `${import.meta.env.VITE_BACKEND_URL}/register`,
                 formData
             );
 

@@ -25,7 +25,7 @@ const Cart = () => {
         try {
 
             const response = await axios.get(
-                "http://localhost:5000/api/cart",
+                `${import.meta.env.VITE_BACKEND_URL}/cart`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -78,7 +78,7 @@ const Cart = () => {
 
         // If backend already returned /uploads/...
         if (image.startsWith("/uploads/")) {
-            return `http://localhost:5000${image}`;
+            return `https://fragranzia-mern.vercel.app${image}`;
         }
 
         // If backend returned only filename
@@ -99,7 +99,7 @@ const Cart = () => {
         try {
 
             const response = await axios.put(
-                "http://localhost:5000/api/cart/update",
+                `${import.meta.env.VITE_BACKEND_URL}/cart/update`,
                 {
                     productId: productId,
                     quantity: currentQuantity + 1,
@@ -141,7 +141,7 @@ const Cart = () => {
         try {
 
             const response = await axios.put(
-                "http://localhost:5000/api/cart/update",
+                `${import.meta.env.VITE_BACKEND_URL}/cart/update`,
                 {
                     productId: productId,
                     quantity: currentQuantity - 1,
@@ -176,7 +176,7 @@ const Cart = () => {
         try {
 
             const response = await axios.delete(
-                "http://localhost:5000/api/cart/remove",
+                `${import.meta.env.VITE_BACKEND_URL}/cart/remove`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -210,7 +210,7 @@ const Cart = () => {
         try {
 
             const response = await axios.delete(
-                "http://localhost:5000/api/cart/clear",
+                `${import.meta.env.VITE_BACKEND_URL}/cart/clear`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,

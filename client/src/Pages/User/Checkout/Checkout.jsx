@@ -65,7 +65,7 @@ const Checkout = () => {
                 setLoading(true);
 
                 const response = await axios.get(
-                    "http://localhost:5000/api/cart",
+                    `${import.meta.env.VITE_BACKEND_URL}/cart`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`,
@@ -174,7 +174,7 @@ const Checkout = () => {
         }
 
         if (product.images[0].startsWith("/uploads/")) {
-            return `http://localhost:5000${product.images[0]}`;
+            return `https://fragranzia-mern.vercel.app${product.images[0]}`;
         }
 
         return `/${product.images[0]}`;
@@ -327,7 +327,7 @@ const Checkout = () => {
                         );
 
                         await axios.post(
-                            "http://localhost:5000/api/orders/payment-failed",
+                            `${import.meta.env.VITE_BACKEND_URL}/orders/payment-failed`,
                             {
                                 orderId,
                             },
@@ -369,7 +369,7 @@ const Checkout = () => {
 
                                 const verifyRes =
                                     await axios.post(
-                                        "http://localhost:5000/api/orders/payment/verify-payment",
+                                        `${import.meta.env.VITE_BACKEND_URL}/orders/payment/verify-payment`,
                                         {
                                             razorpay_order_id:
                                                 response.razorpay_order_id,
@@ -442,7 +442,7 @@ const Checkout = () => {
                                 try {
 
                                     await axios.post(
-                                        "http://localhost:5000/api/orders/payment-failed",
+                                        `${import.meta.env.VITE_BACKEND_URL}/orders/payment-failed`,
                                         {
                                             orderId,
                                         },
@@ -499,7 +499,7 @@ const Checkout = () => {
                             try {
 
                                 await axios.post(
-                                    "http://localhost:5000/api/orders/payment-failed",
+                                    `${import.meta.env.VITE_BACKEND_URL}/orders/payment-failed`,
                                     {
                                         orderId,
                                     },

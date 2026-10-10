@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API_URL =
-    "http://localhost:5000/api/orders";
+    `${import.meta.env.VITE_BACKEND_URL}/orders`;
 
 
 // =====================================================
