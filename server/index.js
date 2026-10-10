@@ -18,7 +18,7 @@ const categoryRoutes = require("./routes/CategoryRoutes");
 
 const app = express();
 
-const PORT = process.env.PORT || 5000; 
+const PORT = process.env.PORT || 5000;
 
 
 // connect to database
@@ -28,6 +28,8 @@ const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
   "http://localhost:5175",
+  "https://fragranzia-mern-2d7v.vercel.app",
+
 ];
 // only allow these links can access the project
 
@@ -66,5 +68,5 @@ app.use("/api/orders", orderRoutes);
 
 
 app.listen(PORT, () => {
-    console.log(`server running on http://localhost:${PORT}`);
+  console.log(`server running on http://localhost:${PORT}`);
 });
